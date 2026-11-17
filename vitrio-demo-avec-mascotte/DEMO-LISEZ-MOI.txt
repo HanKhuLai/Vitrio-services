@@ -1,0 +1,13 @@
+VITRIO — DÉMONSTRATION
+
+Ce dossier permet une publication de démonstration via .github/workflows/demo.yml.
+La réservation et la saisie de données personnelles sont désactivées.
+Le contrôle strict de publication de production et son workflow pages.yml restent inchangés.
+
+1. Mettre les fichiers et dossiers du projet à la racine du dépôt GitHub.
+2. Settings > Pages > Source : GitHub Actions.
+3. Actions > Démo Vitrio (manuelle) > Run workflow.
+4. Attendre le succès du déploiement puis ouvrir l’URL GitHub Pages.
+
+Attention : GitHub Pages est public, même si vous ne communiquez le lien qu’à votre oncle.
+Pour la vraie mise en service, repartir de la version de production et compléter la configuration et les mentions légales.

@@ -26,9 +26,11 @@ if (typeof config.mascot === 'string' && /^assets\/[a-zA-Z0-9_./-]+\.(png|webp|s
   }
 }
 const form = $('#booking-form');
-// Démo : aucun formulaire personnel actif.
-for (const field of form.querySelectorAll('input, select, textarea, button[type=submit]')) field.disabled = true;
-$('#form-status').textContent = 'Formulaire désactivé pour cette démonstration. Aucun renseignement personnel ne doit être saisi.';
+// Démo : champs interactifs pour illustrer le parcours, mais aucun envoi possible.
+// Le bouton reste inactif, et aucune donnée n'est enregistrée ni transmise.
+$('#booking-button').disabled = true;
+$('#booking-button').setAttribute('aria-disabled', 'true');
+$('#form-status').textContent = 'Vous pouvez tester les champs avec des informations fictives. Le bouton d’envoi est désactivé : aucune donnée n’est enregistrée ni transmise.';
 const service = $('#service');
 for (const link of document.querySelectorAll('[data-service]')) {
   link.addEventListener('click', () => { service.value = link.dataset.service; });
